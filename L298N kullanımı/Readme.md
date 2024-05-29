@@ -2,7 +2,10 @@
 <hr></hr>
 <pre>
   L298N nedir?
-  L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.
+  L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅
+  Çoğu projede tercih edilebilir💯
+  Ucuzdur✅
+  Kolay yönetilir✅
   Bu örnekte size DC motor ile kullanımını anlattım.
 </pre>
 
@@ -23,14 +26,15 @@
       IN 4 2 Bu porta 1 değeri gönderildiğinde sağ tekerler geri yönde dönücektir.
   Bilgi:eğer motorlar ters bağlanırsa ters tarafa döner,
   Motorları çalıştırdıktan sonra delay koymanız gerekir
-  örneğin bu çalışmayan kod:
+  
+  örneğin bu çalışmayan kod:❌
   void loop()
       {
       Iileri();
       delay(500);
       Sag();
     }
-  Çalışan Kod  
+  Çalışan Kod:✅
   void loop()
       {
       Iileri();
@@ -39,6 +43,7 @@
       delay(500);
       Sag();
     }
+  
   </pre>
 
 
