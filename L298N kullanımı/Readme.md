@@ -3,9 +3,10 @@
 <pre>
   L298N nedir?
   L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅
-  Çoğu projede tercih edilebilir💯
-  Ucuzdur✅
-  Kolay yönetilir✅
+  L298N 12V DC - 48V DC ye kadar destekler.✅
+  Çoğu projede tercih ediliyor.💯
+  Ucuzdur.✅
+  Kolay yönetilir.✅
   Bu örnekte size DC motor ile kullanımını anlattım.
 </pre>
 
@@ -19,14 +20,14 @@
   6-pinler
       EN A Sol motorun hızını belirler 0-255 arasında değer alır(değer ne kadar yüksekse o kadar da hızı fazla olur)
       IN 1 Bu porta 1 değeri gönderildiğinde sol tekerler geri yönde dönücektir.(IN=INPUT demektir)
-      IN 2 Bu porta 1 değeri gönderildiğinde sol tekerler geri yönde dönücektir.(eğer hem IN1 ve IN2 ye 1 verilirse motor sıkı şekilde fren yapıp durucaktır)
+      IN 2 Bu porta 1 değeri gönderildiğinde sol tekerler ileri yönde dönücektir.(eğer hem IN1 ve IN2 ye 1 verilirse motor sıkı şekilde fren yapıp durucaktır)
   
       EN B Sağ motorun hızını belirler 0-255 arasında değer alır.
-      IN 3 1 Bu porta 1 değeri gönderildiğinde sağ tekerler geri yönde dönücektir.
-      IN 4 2 Bu porta 1 değeri gönderildiğinde sağ tekerler geri yönde dönücektir.
-  Bilgi:eğer motorlar ters bağlanırsa ters tarafa döner,
-  Motorları çalıştırdıktan sonra delay koymanız gerekir
+      IN 3 Bu porta 1 değeri gönderildiğinde sağ tekerler geri yönde dönücektir.
+      IN 4 Bu porta 1 değeri gönderildiğinde sağ tekerler ileri yönde dönücektir.
   
+  Bilgi:eğer motorlar ters bağlanırsa ters tarafa döner,🎡
+  Motorları çalıştırdıktan sonra delay koymanız gerekir
   örneğin bu çalışmayan kod:❌
   void loop()
       {
@@ -45,8 +46,4 @@
     }
   
   </pre>
-
-
-
-
 
