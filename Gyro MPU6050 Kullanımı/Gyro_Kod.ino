@@ -1,39 +1,55 @@
-#include <MPU6050_tockn.h>//gyro k�t�phansesini ekleyin
-#include <Wire.h> 	//SDA ve SCL kullan?lan yerlerde bu k�t�phane kullan?labilir
+#include <MPU6050_tockn.h> // MPU6050 kütüphanesini ekleyin
+#include <Wire.h>          // SDA ve SCL kullanılan yerlerde bu kütüphane kullanılabilir
+
 MPU6050 mpu6050(Wire);
+
 void setup() {
- Serial.begin(9600);
- Wire.begin();
- mpu6050.begin();//ba?lat?n
- mpu6050.calcGyroOffsets(true); // gyro nun off set de?erini ayarlamay? aktif et
- mpu6050.update();
+  Serial.begin(9600);
+  Wire.begin();
+  mpu6050.begin(); // Başlatın
+  mpu6050.calcGyroOffsets(true); // Gyro'nun offset değerini ayarlamayı aktif et
 }
 
 void loop() {
-
-  Sabit_Gyro();
-  
+  mpu6050.update(); // Verileri güncelle
+  GyroKonumunuAl();
+  Sabit_Gyro(); // Sabit gyro verilerini al ve göster
+  delay(100); // 100 ms bekle
 }
-void GyroKonumunuAl(){//gyro de?erini al
- Serial.print("x:");
-  Serial.print(mpu6050.getAngleX());//x de?erini al
-   Serial.print("y:");
-  Serial.print(mpu6050.getAngleY());// y de?erini al
-   Serial.print("z:");
-  Serial.print(mpu6050.getAngleZ());// z de?erini al
+
+void GyroKonumunuAl() { // Gyro değerini al
+  Serial.print("Acc [X, Y, Z]: ");
+  Serial.print(mpu6050.getAccX());
+  Serial.print(", ");
+  Serial.print(mpu6050.getAccY());
+  Serial.print(", ");
+  Serial.print(mpu6050.getAccZ());
+  Serial.print("\t");
+
+  Serial.print("Gyro [X, Y, Z]: ");
+  Serial.print(mpu6050.getGyroX());
+  Serial.print(", ");
+  Serial.print(mpu6050.getGyroY());
+  Serial.print(", ");
+  Serial.print(mpu6050.getGyroZ());
+  Serial.print("\t");
+
+  Serial.print("Temp: ");
+  Serial.print(mpu6050.getTemp());
+  Serial.println();
+}
+
+void Sabit_Gyro() { // Başlangıç konumunu al
+  static int bir = 1;
+  if (bir == 1) {
+    Serial.print("Initial Angles [X, Y, Z]: ");
+    Serial.print(mpu6050.getAngleX());
+    Serial.print(", ");
+    Serial.print(mpu6050.getAngleY());
+    Serial.print(", ");
+    Serial.print(mpu6050.getAngleZ());
+    Serial.println();
+    bir++;
   }
-  
-  
-void Sabit_Gyro()//ba?lang?� konumunu al
-{
-  int bir=1;
-  if(bir==1)
-  {
-   Serial.print("x:");
-  Serial.print(mpu6050.getAngleX());
-   Serial.print("y:");
-  Serial.print(mpu6050.getAngleY());
-   Serial.print("z:");
-  Serial.print(mpu6050.getAngleZ());
-  bir++;
- }
+
+}
