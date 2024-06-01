@@ -10,6 +10,8 @@
   Bu örnekte size DC motor ile kullanımını anlattım.
 </pre>
 
+![image](https://github.com/EmreInanc/Arduiono-Tum-Projeler/assets/169296203/aeb74820-2e86-4246-b9ad-f264e76a8831)
+
 ![Şema_L298N](https://github.com/EmreInanc/Arduiono-Tum-Projeler/assets/169296203/92f081f2-f6e8-4321-b75a-f558eff292a5)
 <pre>
   1-öncelikle pilimizin + ve - sini  L298N in motor sürücü kısmına jumper kablo ile bağlıyoruz.
