@@ -35,4 +35,4 @@ kablo renkleri değişken olabilir.çünkü bu sensörü üreten farklı satıc�
 
 ![image](https://github.com/EmreInanc/Arduiono-Tum-Projeler/assets/169296203/86dcf163-a630-404c-99c8-86c71c77a68d)
 <br />
-Mesafe ayarını burdan yapmalısınız kaç cm de tepki vericeğine göre ayarlamanız gerelir
+Mesafe ayarını burdan yapmalısınız kaç cm de tepki vericeğine göre ayarlamanız gereKir
