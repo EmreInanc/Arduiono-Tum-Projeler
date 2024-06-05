@@ -1,15 +1,13 @@
-<h3> Arduiono ile L298N H-bridge kullanımı</h3>
-<hr></hr>
 <pre>
-  L298N nedir?
-  <ul>
-  <li><h4>L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅</h4></li>
-  <li><h4>L298N 12V DC - 48V DC ye kadar destekler.✅</h4></li>
-  <li><h4>Çoğu projede tercih ediliyor.💯</h4></li>
- <li><h4>Ucuzdur.✅</h4></li>
- <li><h4>Kolay yönetilir.✅</h4></li>
-</ul>
-     <p> Bu örnekte size DC motor ile kullanımını anlattım.</p>
+<h3>Arduiono ile L298N H-bridge kullanımı</h3>
+L298N nedir?
+
+<p>L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅</p>
+<p>L298N 12V DC - 48V DC ye kadar destekler.✅</p>
+<p>Çoğu projede tercih ediliyor.💯</p>
+<p>Ucuzdur.✅</p>
+<p>Kolay yönetilir.✅</p>
+     <p>Bu örnekte size DC motor ile kullanımını anlattım.</p>
 </pre>
 
 ![image](https://github.com/EmreInanc/Arduiono-Tum-Projeler/assets/169296203/aeb74820-2e86-4246-b9ad-f264e76a8831)
@@ -38,7 +36,7 @@
       Iileri();
       delay(500);
       Sag();
-    }
+       }
   Çalışan Kod:✅
   void loop()
       {
