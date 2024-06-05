@@ -3,11 +3,11 @@
 <pre>
   L298N nedir?
   <ul>
-  <li><h4>L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅<h4></li>
-  <li>L298N 12V DC - 48V DC ye kadar destekler.✅</li>
-  <li>Çoğu projede tercih ediliyor.💯</li>
- <li>Ucuzdur.✅</li>
- <li>Kolay yönetilir.✅</li>
+  <li><h4>L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅</h4></li>
+  <li><h4>L298N 12V DC - 48V DC ye kadar destekler.✅</h4></li>
+  <li><h4>Çoğu projede tercih ediliyor.💯</h4></li>
+ <li><h4>Ucuzdur.✅</h4></li>
+ <li><h4>Kolay yönetilir.✅</h4></li>
 </ul>
      <p> Bu örnekte size DC motor ile kullanımını anlattım.</p>
 </pre>
