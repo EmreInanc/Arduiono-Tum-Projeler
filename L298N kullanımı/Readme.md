@@ -2,12 +2,14 @@
 <hr></hr>
 <pre>
   L298N nedir?
-  L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅
-  L298N 12V DC - 48V DC ye kadar destekler.✅
-  Çoğu projede tercih ediliyor.💯
-  Ucuzdur.✅
-  Kolay yönetilir.✅
-  Bu örnekte size DC motor ile kullanımını anlattım.
+  <ul>
+  <li>L298N bir motor sürücüdüdür 2 adet DC motor ve 1 adet STEP motor kullanabilirsiniz.✅</li>
+  <li>L298N 12V DC - 48V DC ye kadar destekler.✅</li>
+  <li>Çoğu projede tercih ediliyor.💯</li>
+ <li>Ucuzdur.✅</li>
+ <li>Kolay yönetilir.✅</li>
+</ul>
+     <p> Bu örnekte size DC motor ile kullanımını anlattım.</p>
 </pre>
 
 ![image](https://github.com/EmreInanc/Arduiono-Tum-Projeler/assets/169296203/aeb74820-2e86-4246-b9ad-f264e76a8831)
